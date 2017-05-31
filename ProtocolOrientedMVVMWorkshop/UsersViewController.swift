@@ -11,7 +11,7 @@ import UIKit
 class UsersViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     fileprivate var userCellIdentifier = ""
-    fileprivate var datasource: UsersDatasourceProtocol?
+    var datasource: UsersDatasourceProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,10 @@ class UsersViewController: UIViewController {
         
         self.registerTableDelegates()
         self.tableView.estimatedRowHeight = 44
+        
+        datasource?.fetchUsers(completionHandler: { success in
+            self.tableView.reloadData()
+        })
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -40,7 +44,7 @@ extension UsersViewController: UITableViewDelegate {
 
 extension UsersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datasource?.userViewModels?.count ?? 0
+        return datasource?.userViewModels.count ?? 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,7 +54,7 @@ extension UsersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: userCellIdentifier, for: indexPath) as! UserDetailTableViewCell
         
-        cell.configure(datasource: datasource!.userViewModels![indexPath.row])
+        cell.configure(datasource: datasource!.userViewModels[indexPath.row])
         
         return cell
     }
