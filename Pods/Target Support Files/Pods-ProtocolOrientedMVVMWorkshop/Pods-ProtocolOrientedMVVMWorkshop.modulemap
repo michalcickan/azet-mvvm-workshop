@@ -1,0 +1,6 @@
+framework module Pods_ProtocolOrientedMVVMWorkshop {
+  umbrella header "Pods-ProtocolOrientedMVVMWorkshop-umbrella.h"
+
+  export *
+  module * { export * }
+}
