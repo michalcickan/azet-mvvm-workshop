@@ -23,6 +23,7 @@
 		1480513A1EDEDFDD006BFC4D /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051391EDEDFDD006BFC4D /* PictureModel.swift */; };
 		1480513C1EDEE00C006BFC4D /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480513B1EDEE00C006BFC4D /* NameModel.swift */; };
 		1480513E1EDEE03F006BFC4D /* UsersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480513D1EDEE03F006BFC4D /* UsersListModel.swift */; };
+		148051401EDEE35D006BFC4D /* RealmUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480513F1EDEE35D006BFC4D /* RealmUserModel.swift */; };
 		4314867C7E107D6C0A0CEBE8 /* Pods_ProtocolOrientedMVVMWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039938423079BCC0F6E10FF5 /* Pods_ProtocolOrientedMVVMWorkshop.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		148051391EDEDFDD006BFC4D /* PictureModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PictureModel.swift; path = Models/DataModels/PictureModel.swift; sourceTree = "<group>"; };
 		1480513B1EDEE00C006BFC4D /* NameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameModel.swift; path = Models/DataModels/NameModel.swift; sourceTree = "<group>"; };
 		1480513D1EDEE03F006BFC4D /* UsersListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersListModel.swift; path = Models/DataModels/UsersListModel.swift; sourceTree = "<group>"; };
+		1480513F1EDEE35D006BFC4D /* RealmUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmUserModel.swift; path = Models/DataModels/RealmUserModel.swift; sourceTree = "<group>"; };
 		C12FBBFDDC0CC61DC511C48D /* Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtocolOrientedMVVMWorkshop/Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 				148051391EDEDFDD006BFC4D /* PictureModel.swift */,
 				1480513B1EDEE00C006BFC4D /* NameModel.swift */,
 				1480513D1EDEE03F006BFC4D /* UsersListModel.swift */,
+				1480513F1EDEE35D006BFC4D /* RealmUserModel.swift */,
 			);
 			name = DataModels;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148051401EDEE35D006BFC4D /* RealmUserModel.swift in Sources */,
 				1480513C1EDEE00C006BFC4D /* NameModel.swift in Sources */,
 				148051171EDED437006BFC4D /* SecondViewController.swift in Sources */,
 				148051131EDED437006BFC4D /* AppDelegate.swift in Sources */,
@@ -424,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MBG2SUJ3MC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProtocolOrientedMVVMWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RingierAxelSpringer.ProtocolOrientedMVVMWorkshop;
@@ -438,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MBG2SUJ3MC;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ProtocolOrientedMVVMWorkshop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RingierAxelSpringer.ProtocolOrientedMVVMWorkshop;
