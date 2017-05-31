@@ -11,6 +11,7 @@ import UIKit
 class UsersViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     fileprivate var userCellIdentifier = ""
+    fileprivate var datasource: UsersDatasourceProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,7 @@ extension UsersViewController: UITableViewDelegate {
 
 extension UsersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return datasource?.userViewModels?.count ?? 0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -48,6 +49,8 @@ extension UsersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: userCellIdentifier, for: indexPath) as! UserDetailTableViewCell
+        
+        cell.configure(datasource: datasource!.userViewModels![indexPath.row])
         
         return cell
     }

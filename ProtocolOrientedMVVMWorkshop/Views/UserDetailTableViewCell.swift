@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alamofire
+import AlamofireImage
 
 protocol UserDetailCellDatasource {
     var profileImageUrl: URL? { get }
@@ -19,21 +19,27 @@ class UserDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nickLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
     func configure(datasource: UserDetailCellDatasource) {
         self.nickLabel.text = datasource.nick
         self.descriptionLabel.text = datasource.description
+        
+        if let url = datasource.profileImageUrl {
+            self.profileImage.af_setImage(withURL: url)
+        } else {
+            self.profileImage.image = nil
+        }
     }
 }
 

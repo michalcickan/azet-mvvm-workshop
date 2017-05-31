@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		145AF0E51EDEF68C0061D4E8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145AF0E41EDEF68C0061D4E8 /* UIViewExtension.swift */; };
+		145AF0E81EDF12880061D4E8 /* UsersDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145AF0E71EDF12880061D4E8 /* UsersDatasource.swift */; };
 		148051131EDED437006BFC4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051121EDED437006BFC4D /* AppDelegate.swift */; };
 		148051151EDED437006BFC4D /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051141EDED437006BFC4D /* UsersViewController.swift */; };
 		1480511A1EDED437006BFC4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148051181EDED437006BFC4D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		039938423079BCC0F6E10FF5 /* Pods_ProtocolOrientedMVVMWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtocolOrientedMVVMWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E1854739393E98C196CF6D /* Pods-ProtocolOrientedMVVMWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolOrientedMVVMWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtocolOrientedMVVMWorkshop/Pods-ProtocolOrientedMVVMWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		145AF0E41EDEF68C0061D4E8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
+		145AF0E71EDF12880061D4E8 /* UsersDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersDatasource.swift; path = Models/Datasources/UsersDatasource.swift; sourceTree = "<group>"; };
 		1480510F1EDED437006BFC4D /* ProtocolOrientedMVVMWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolOrientedMVVMWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148051121EDED437006BFC4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		148051141EDED437006BFC4D /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		145AF0E61EDF12200061D4E8 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				145AF0E71EDF12880061D4E8 /* UsersDatasource.swift */,
+			);
+			name = Datasources;
+			sourceTree = "<group>";
+		};
 		148051061EDED437006BFC4D = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +138,7 @@
 		1480512E1EDEDDF8006BFC4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				145AF0E61EDF12200061D4E8 /* Datasources */,
 				148051361EDEDF52006BFC4D /* DataModels */,
 				148051351EDEDF4A006BFC4D /* Parameters */,
 			);
@@ -328,6 +339,7 @@
 				148051471EDEF2AA006BFC4D /* UserDetailTableViewCell.swift in Sources */,
 				1480513A1EDEDFDD006BFC4D /* PictureModel.swift in Sources */,
 				1480513E1EDEE03F006BFC4D /* UsersListModel.swift in Sources */,
+				145AF0E81EDF12880061D4E8 /* UsersDatasource.swift in Sources */,
 				148051151EDED437006BFC4D /* UsersViewController.swift in Sources */,
 				148051431EDEF23F006BFC4D /* UITableViewExtension.swift in Sources */,
 			);
