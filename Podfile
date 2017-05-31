@@ -6,7 +6,7 @@ use_frameworks!
 def shared_pods
 pod 'Alamofire', '~> 4.0'
 pod 'AsyncSwift'
-pod 'ObjectMapper', '2.0.0'
+pod 'ObjectMapper'
 
 end
 
