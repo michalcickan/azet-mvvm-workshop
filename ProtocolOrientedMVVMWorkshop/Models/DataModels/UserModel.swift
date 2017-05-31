@@ -54,7 +54,7 @@ struct UserModel: Mappable {
     let nationality: String?
     let pictureModel : PictureModel?
     let userName : String?
-    let id : String
+    private(set) var id : String
     let nameModel: NameModel?
     let registered: String?
     
@@ -64,8 +64,14 @@ struct UserModel: Mappable {
         phone = try? map.value("phone")
         nationality = try? map.value("nat")
         pictureModel = try? map.value("picture")
-        userName = try? map.value("username")
-        id = try! map.value("id.value")
+        userName = try? map.value("login.username")
+        
+        do {
+            id = try map.value("id.value")
+        } catch {
+            id = "\(userName!)"
+        }
+        
         nameModel = try? map.value("name")
         registered = map["registered"].value()
     }
