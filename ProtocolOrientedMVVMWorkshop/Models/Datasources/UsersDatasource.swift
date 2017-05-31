@@ -80,3 +80,50 @@ extension RESTUsersDatasource {
         }
     }
 }
+
+class RealmDatasource: UsersDatasourceProtocol {
+    func userTapped(atIndex index: Int) {
+    }
+
+    func fetchUsers(completionHandler: @escaping ((Bool) -> Void)) {
+        let objects: [RealmUserModel]? = RealmManager.getObjects(nil)
+        
+        guard let objs = objects else { return }
+        userViewModels.append(contentsOf: objs.map({
+          RealmUserViewModel(realmUser: $0)
+        })
+        )
+        completionHandler(true)
+    }
+
+    var userViewModels: [UserDetailCellDatasource] = []
+    
+    struct RealmUserViewModel: UserDetailCellDatasource {
+        var realmUser: RealmUserModel?
+        
+        init(realmUser: RealmUserModel?) {
+            self.realmUser = realmUser
+        }
+        // MARK: - View models getters
+        var profileImageUrl: URL? {
+            guard let strUrl = realmUser?.pictureModel?.medium else { return nil }
+            
+            return URL(string: strUrl)
+        }
+        var nick: String {
+            return realmUser?.userName ?? ""
+        }
+        var description: String {
+            var descArray = [String]()
+            if let nationality = realmUser?.phone {
+                descArray.append(nationality)
+            }
+            if let gender = realmUser?.gender {
+                descArray.append(gender)
+            }
+            return descArray.joined(separator: ", ")
+        }
+    }
+
+    
+}

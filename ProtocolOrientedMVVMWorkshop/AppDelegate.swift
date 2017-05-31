@@ -18,9 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let viewControllers = (self.window?.rootViewController as? UITabBarController)?.viewControllers {
             let first = viewControllers.first as! UsersViewController
-            //let second = viewControllers.last as! UsersViewController
+            let second = viewControllers.last as! UsersViewController
             
             first.datasource = RESTUsersDatasource()
+            second.datasource = RealmDatasource()
         }
         // Override point for customization after application launch.
         return true
