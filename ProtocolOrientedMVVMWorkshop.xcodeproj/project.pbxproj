@@ -15,6 +15,7 @@
 		1480511F1EDED437006BFC4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1480511D1EDED437006BFC4D /* LaunchScreen.storyboard */; };
 		148051271EDED48C006BFC4D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 148051261EDED48C006BFC4D /* Podfile */; };
 		148051291EDED72D006BFC4D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 148051281EDED72D006BFC4D /* README.md */; };
+		1480512C1EDED884006BFC4D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480512B1EDED884006BFC4D /* RealmManager.swift */; };
 		4314867C7E107D6C0A0CEBE8 /* Pods_ProtocolOrientedMVVMWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039938423079BCC0F6E10FF5 /* Pods_ProtocolOrientedMVVMWorkshop.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +30,9 @@
 		1480511B1EDED437006BFC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1480511E1EDED437006BFC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148051201EDED437006BFC4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		148051261EDED48C006BFC4D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		148051261EDED48C006BFC4D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		148051281EDED72D006BFC4D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1480512B1EDED884006BFC4D /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmManager.swift; path = Managers/RealmManager.swift; sourceTree = "<group>"; };
 		C12FBBFDDC0CC61DC511C48D /* Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtocolOrientedMVVMWorkshop/Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 		148051111EDED437006BFC4D /* ProtocolOrientedMVVMWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				1480512A1EDED868006BFC4D /* Managers */,
 				148051121EDED437006BFC4D /* AppDelegate.swift */,
 				148051141EDED437006BFC4D /* FirstViewController.swift */,
 				148051161EDED437006BFC4D /* SecondViewController.swift */,
@@ -78,6 +81,14 @@
 				148051201EDED437006BFC4D /* Info.plist */,
 			);
 			path = ProtocolOrientedMVVMWorkshop;
+			sourceTree = "<group>";
+		};
+		1480512A1EDED868006BFC4D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1480512B1EDED884006BFC4D /* RealmManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		56374E506B34388B3F42E6D6 /* Pods */ = {
@@ -224,6 +235,7 @@
 			files = (
 				148051171EDED437006BFC4D /* SecondViewController.swift in Sources */,
 				148051131EDED437006BFC4D /* AppDelegate.swift in Sources */,
+				1480512C1EDED884006BFC4D /* RealmManager.swift in Sources */,
 				148051291EDED72D006BFC4D /* README.md in Sources */,
 				148051151EDED437006BFC4D /* FirstViewController.swift in Sources */,
 			);
