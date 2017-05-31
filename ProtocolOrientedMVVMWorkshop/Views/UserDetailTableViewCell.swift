@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import Alamofire
+
+protocol UserDetailCellDatasource {
+    var profileImageUrl: URL? { get }
+    var nick: String { get }
+    var description: String { get }
+}
 
 class UserDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
@@ -24,4 +31,9 @@ class UserDetailTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configure(datasource: UserDetailCellDatasource) {
+        self.nickLabel.text = datasource.nick
+        self.descriptionLabel.text = datasource.description
+    }
 }
+

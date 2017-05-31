@@ -15,6 +15,7 @@ shared_pods
 
 pod 'RealmSwift'
 pod 'AsyncSwift'
+pod 'AlamofireImage'
 end
 
 post_install do |installer|
