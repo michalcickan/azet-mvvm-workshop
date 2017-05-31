@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		145AF0E51EDEF68C0061D4E8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145AF0E41EDEF68C0061D4E8 /* UIViewExtension.swift */; };
 		148051131EDED437006BFC4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051121EDED437006BFC4D /* AppDelegate.swift */; };
-		148051151EDED437006BFC4D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051141EDED437006BFC4D /* FirstViewController.swift */; };
-		148051171EDED437006BFC4D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051161EDED437006BFC4D /* SecondViewController.swift */; };
+		148051151EDED437006BFC4D /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051141EDED437006BFC4D /* UsersViewController.swift */; };
 		1480511A1EDED437006BFC4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148051181EDED437006BFC4D /* Main.storyboard */; };
 		1480511C1EDED437006BFC4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1480511B1EDED437006BFC4D /* Assets.xcassets */; };
 		1480511F1EDED437006BFC4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1480511D1EDED437006BFC4D /* LaunchScreen.storyboard */; };
@@ -24,16 +24,19 @@
 		1480513C1EDEE00C006BFC4D /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480513B1EDEE00C006BFC4D /* NameModel.swift */; };
 		1480513E1EDEE03F006BFC4D /* UsersListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480513D1EDEE03F006BFC4D /* UsersListModel.swift */; };
 		148051401EDEE35D006BFC4D /* RealmUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480513F1EDEE35D006BFC4D /* RealmUserModel.swift */; };
+		148051431EDEF23F006BFC4D /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051421EDEF23F006BFC4D /* UITableViewExtension.swift */; };
+		148051471EDEF2AA006BFC4D /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148051451EDEF2AA006BFC4D /* UserDetailTableViewCell.swift */; };
+		148051481EDEF2AA006BFC4D /* UserDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148051461EDEF2AA006BFC4D /* UserDetailTableViewCell.xib */; };
 		4314867C7E107D6C0A0CEBE8 /* Pods_ProtocolOrientedMVVMWorkshop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039938423079BCC0F6E10FF5 /* Pods_ProtocolOrientedMVVMWorkshop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		039938423079BCC0F6E10FF5 /* Pods_ProtocolOrientedMVVMWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProtocolOrientedMVVMWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10E1854739393E98C196CF6D /* Pods-ProtocolOrientedMVVMWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolOrientedMVVMWorkshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtocolOrientedMVVMWorkshop/Pods-ProtocolOrientedMVVMWorkshop.release.xcconfig"; sourceTree = "<group>"; };
+		145AF0E41EDEF68C0061D4E8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Extensions/UIViewExtension.swift; sourceTree = "<group>"; };
 		1480510F1EDED437006BFC4D /* ProtocolOrientedMVVMWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolOrientedMVVMWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		148051121EDED437006BFC4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		148051141EDED437006BFC4D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		148051161EDED437006BFC4D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		148051141EDED437006BFC4D /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		148051191EDED437006BFC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1480511B1EDED437006BFC4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1480511E1EDED437006BFC4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		1480513B1EDEE00C006BFC4D /* NameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NameModel.swift; path = Models/DataModels/NameModel.swift; sourceTree = "<group>"; };
 		1480513D1EDEE03F006BFC4D /* UsersListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsersListModel.swift; path = Models/DataModels/UsersListModel.swift; sourceTree = "<group>"; };
 		1480513F1EDEE35D006BFC4D /* RealmUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmUserModel.swift; path = Models/DataModels/RealmUserModel.swift; sourceTree = "<group>"; };
+		148051421EDEF23F006BFC4D /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableViewExtension.swift; path = Extensions/UITableViewExtension.swift; sourceTree = "<group>"; };
+		148051451EDEF2AA006BFC4D /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDetailTableViewCell.swift; path = Views/UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		148051461EDEF2AA006BFC4D /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserDetailTableViewCell.xib; path = Views/UserDetailTableViewCell.xib; sourceTree = "<group>"; };
 		C12FBBFDDC0CC61DC511C48D /* Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProtocolOrientedMVVMWorkshop/Pods-ProtocolOrientedMVVMWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,12 +93,13 @@
 		148051111EDED437006BFC4D /* ProtocolOrientedMVVMWorkshop */ = {
 			isa = PBXGroup;
 			children = (
+				148051441EDEF27C006BFC4D /* Views */,
+				148051411EDEF227006BFC4D /* Extensions */,
 				1480512E1EDEDDF8006BFC4D /* Models */,
 				1480512D1EDEDDE7006BFC4D /* Core */,
 				1480512A1EDED868006BFC4D /* Managers */,
 				148051121EDED437006BFC4D /* AppDelegate.swift */,
-				148051141EDED437006BFC4D /* FirstViewController.swift */,
-				148051161EDED437006BFC4D /* SecondViewController.swift */,
+				148051141EDED437006BFC4D /* UsersViewController.swift */,
 				148051181EDED437006BFC4D /* Main.storyboard */,
 				1480511B1EDED437006BFC4D /* Assets.xcassets */,
 				1480511D1EDED437006BFC4D /* LaunchScreen.storyboard */,
@@ -145,6 +152,24 @@
 				1480513F1EDEE35D006BFC4D /* RealmUserModel.swift */,
 			);
 			name = DataModels;
+			sourceTree = "<group>";
+		};
+		148051411EDEF227006BFC4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				148051421EDEF23F006BFC4D /* UITableViewExtension.swift */,
+				145AF0E41EDEF68C0061D4E8 /* UIViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		148051441EDEF27C006BFC4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				148051451EDEF2AA006BFC4D /* UserDetailTableViewCell.swift */,
+				148051461EDEF2AA006BFC4D /* UserDetailTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		56374E506B34388B3F42E6D6 /* Pods */ = {
@@ -230,6 +255,7 @@
 				1480511F1EDED437006BFC4D /* LaunchScreen.storyboard in Resources */,
 				1480511C1EDED437006BFC4D /* Assets.xcassets in Resources */,
 				148051271EDED48C006BFC4D /* Podfile in Resources */,
+				148051481EDEF2AA006BFC4D /* UserDetailTableViewCell.xib in Resources */,
 				1480511A1EDED437006BFC4D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,9 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145AF0E51EDEF68C0061D4E8 /* UIViewExtension.swift in Sources */,
 				148051401EDEE35D006BFC4D /* RealmUserModel.swift in Sources */,
 				1480513C1EDEE00C006BFC4D /* NameModel.swift in Sources */,
-				148051171EDED437006BFC4D /* SecondViewController.swift in Sources */,
 				148051131EDED437006BFC4D /* AppDelegate.swift in Sources */,
 				1480512C1EDED884006BFC4D /* RealmManager.swift in Sources */,
 				148051291EDED72D006BFC4D /* README.md in Sources */,
@@ -299,9 +325,11 @@
 				148051341EDEDE6D006BFC4D /* Config.swift in Sources */,
 				148051301EDEDE1A006BFC4D /* UserRequestParameters.swift in Sources */,
 				148051381EDEDF67006BFC4D /* UserModel.swift in Sources */,
+				148051471EDEF2AA006BFC4D /* UserDetailTableViewCell.swift in Sources */,
 				1480513A1EDEDFDD006BFC4D /* PictureModel.swift in Sources */,
 				1480513E1EDEE03F006BFC4D /* UsersListModel.swift in Sources */,
-				148051151EDED437006BFC4D /* FirstViewController.swift in Sources */,
+				148051151EDED437006BFC4D /* UsersViewController.swift in Sources */,
+				148051431EDEF23F006BFC4D /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
