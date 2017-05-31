@@ -11,6 +11,7 @@ import Foundation
 protocol UsersDatasourceProtocol {
     var userViewModels: [UserDetailCellDatasource] { get }
     func fetchUsers(completionHandler: ( @escaping (_ success: Bool) -> Void))
+    func userTapped(atIndex index: Int)
 }
 
 class RESTUsersDatasource: UsersDatasourceProtocol {
@@ -40,6 +41,14 @@ class RESTUsersDatasource: UsersDatasourceProtocol {
                 self?.fetchUsers(completionHandler: completionHandler)
             }
         })
+    }
+    func userTapped(atIndex index: Int) {
+        guard let user = (self.userViewModels[index] as? UserDataSourceViewModel)?.userModel else { return }
+        
+        RealmManager.writeObject(
+            RealmUserModel(
+                userModel: user
+        ), update: true)
     }
 }
 

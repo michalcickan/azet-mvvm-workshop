@@ -109,14 +109,14 @@ class RealmNameModel: Object, NSCopying {
 
 // MARK: - RealmPicture model
 class RealmPictureModel: Object, NSCopying  {
-    dynamic var large : URL?
-    dynamic var medium : URL?
-    dynamic var thumbnail : URL?
+    dynamic var large : String?
+    dynamic var medium : String?
+    dynamic var thumbnail : String?
     
     convenience init(
-        large : URL?,
-        medium : URL?,
-        thumbnail : URL?
+        large : String?,
+        medium : String?,
+        thumbnail : String?
         ) {
         self.init()
         
@@ -125,7 +125,11 @@ class RealmPictureModel: Object, NSCopying  {
         self.thumbnail = thumbnail
     }
     convenience init(pictureModel: PictureModel?) {
-        self.init(large: pictureModel?.large, medium: pictureModel?.medium, thumbnail: pictureModel?.thumbnail)
+        self.init(
+            large: pictureModel?.large?.absoluteString,
+            medium: pictureModel?.medium?.absoluteString,
+            thumbnail: pictureModel?.thumbnail?.absoluteString
+        )
     }
     
     func copy(with zone: NSZone? = nil) -> Any {

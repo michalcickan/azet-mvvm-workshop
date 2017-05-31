@@ -39,7 +39,11 @@ class UsersViewController: UIViewController {
 }
 
 extension UsersViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        datasource?.userTapped(atIndex: indexPath.row)
+    }
 }
 
 extension UsersViewController: UITableViewDataSource {
